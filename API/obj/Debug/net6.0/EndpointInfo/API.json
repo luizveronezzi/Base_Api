@@ -1,0 +1,2993 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "API",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/acessos/{id}": {
+      "get": {
+        "tags": [
+          "acessos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/acessos"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acessos"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acessos"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "acessos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/acessos": {
+      "put": {
+        "tags": [
+          "acessos"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acessos"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acessos"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/acessos"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "acessos"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acessos"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acessos"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/acessos"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/acessos"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acessos"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acessos"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/agendacab": {
+      "get": {
+        "tags": [
+          "agendacab"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "agendacab"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/agendacab"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/agendacab"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/agendacab"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "agendacab"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/agendacab"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/agendacab"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/agendacab"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/agendacab"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/agendacab"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/agendacab"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/agendacab/{id}": {
+      "get": {
+        "tags": [
+          "agendacab"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/agendacab"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/agendacab"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/agendacab"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "agendacab"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/agendaeven/getbytipo/{idpessoa}/{start}/{end}/{tipo}": {
+      "get": {
+        "tags": [
+          "agendaeven"
+        ],
+        "parameters": [
+          {
+            "name": "idpessoa",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "start",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "end",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "tipo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/agendaeven/getbyid/{id}/{tipo}": {
+      "get": {
+        "tags": [
+          "agendaeven"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "tipo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/agendaeven"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/agendaeven"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/agendaeven"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/agendaeven": {
+      "put": {
+        "tags": [
+          "agendaeven"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/agendaeven"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/agendaeven"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/agendaeven"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "agendaeven"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/agendaeven"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/agendaeven"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/agendaeven"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/agendaeven"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/agendaeven"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/agendaeven"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/agendaeven/{id}": {
+      "delete": {
+        "tags": [
+          "agendaeven"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/autenticacao/{email}/{password}": {
+      "get": {
+        "tags": [
+          "autenticacao"
+        ],
+        "parameters": [
+          {
+            "name": "email",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "password",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/autenticacao/{your_token}": {
+      "post": {
+        "tags": [
+          "autenticacao"
+        ],
+        "parameters": [
+          {
+            "name": "your_token",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/empresa": {
+      "get": {
+        "tags": [
+          "empresa"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "empresa"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/empresa"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/empresa"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/empresa"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "empresa"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/empresa"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/empresa"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/empresa"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/empresa"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/empresa"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/empresa"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/empresa/{id}": {
+      "get": {
+        "tags": [
+          "empresa"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/empresa"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/empresa"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/empresa"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "empresa"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/funcsal": {
+      "get": {
+        "tags": [
+          "funcsal"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "funcsal"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/funcsal"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/funcsal"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/funcsal"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "funcsal"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/funcsal"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/funcsal"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/funcsal"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/funcsal"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/funcsal"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/funcsal"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/funcsal/{id}": {
+      "get": {
+        "tags": [
+          "funcsal"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/funcsal"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/funcsal"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/funcsal"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "funcsal"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/grupo": {
+      "get": {
+        "tags": [
+          "grupo"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "grupo"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/grupo"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/grupo"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/grupo"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "grupo"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/grupo"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/grupo"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/grupo"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/grupo"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/grupo"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/grupo"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/grupo/{id}": {
+      "get": {
+        "tags": [
+          "grupo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/grupo"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/grupo"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/grupo"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "grupo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/paramcusto": {
+      "get": {
+        "tags": [
+          "paramcusto"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "paramcusto"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/paramcusto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/paramcusto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/paramcusto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "paramcusto"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/paramcusto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/paramcusto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/paramcusto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/paramcusto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/paramcusto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/paramcusto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/paramcusto/{id}": {
+      "get": {
+        "tags": [
+          "paramcusto"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/paramcusto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/paramcusto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/paramcusto"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "paramcusto"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/perfil/{id}": {
+      "get": {
+        "tags": [
+          "perfil"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/perfil"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/perfil"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/perfil"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "perfil"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/perfil": {
+      "put": {
+        "tags": [
+          "perfil"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/perfil"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/perfil"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/perfil"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "perfil"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/perfil"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/perfil"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/perfil"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/perfil"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/perfil"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/perfil"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/perfil_rotina/{id}": {
+      "get": {
+        "tags": [
+          "perfil_rotina"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/perfil_rotina"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/perfil_rotina"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/perfil_rotina"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "perfil_rotina"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/perfil_rotina": {
+      "put": {
+        "tags": [
+          "perfil_rotina"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/perfil_rotina"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/perfil_rotina"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/perfil_rotina"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "perfil_rotina"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/perfil_rotina"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/perfil_rotina"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/perfil_rotina"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/perfil_rotina"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/perfil_rotina"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/perfil_rotina"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/projetos": {
+      "get": {
+        "tags": [
+          "projetos"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "projetos"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/projetos"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/projetos"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/projetos"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "projetos"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/projetos"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/projetos"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/projetos"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/projetos"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/projetos"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/projetos"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/projetos/{id}": {
+      "get": {
+        "tags": [
+          "projetos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/projetos"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/projetos"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/projetos"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "projetos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/projmoves": {
+      "get": {
+        "tags": [
+          "projmoves"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "projmoves"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/projmoves"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/projmoves"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/projmoves"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "projmoves"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/projmoves"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/projmoves"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/projmoves"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/projmoves"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/projmoves"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/projmoves"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/projmoves/{id}": {
+      "get": {
+        "tags": [
+          "projmoves"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/projmoves"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/projmoves"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/projmoves"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "projmoves"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/projmoves/lermovimentos/{id}": {
+      "get": {
+        "tags": [
+          "projmoves"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/projmoves"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/projmoves"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/projmoves"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/projmoves/resultado-projeto/{id}": {
+      "get": {
+        "tags": [
+          "projmoves"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/projmoves"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/projmoves"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/projmoves"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/relatorio_pdf": {
+      "post": {
+        "tags": [
+          "relatorio_pdf"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/xpto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/xpto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/xpto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/rotinas/{id}": {
+      "get": {
+        "tags": [
+          "rotinas"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/rotina"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rotina"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rotina"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "rotinas"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/rotinas/getbygrupo/{idgrupo}/{idempresa}": {
+      "get": {
+        "tags": [
+          "rotinas"
+        ],
+        "parameters": [
+          {
+            "name": "idgrupo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "idempresa",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/rotina"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rotina"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rotina"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/rotinas": {
+      "put": {
+        "tags": [
+          "rotinas"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/rotina"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/rotina"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/rotina"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "rotinas"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/rotina"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/rotina"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/rotina"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/rotina"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rotina"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rotina"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sobre_acessos/{id}": {
+      "get": {
+        "tags": [
+          "sobre_acessos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/sobre_acessos"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sobre_acessos"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sobre_acessos"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "sobre_acessos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/sobre_acessos": {
+      "put": {
+        "tags": [
+          "sobre_acessos"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sobre_acessos"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sobre_acessos"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/sobre_acessos"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "sobre_acessos"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sobre_acessos"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sobre_acessos"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/sobre_acessos"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/sobre_acessos"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sobre_acessos"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sobre_acessos"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/usuarios": {
+      "get": {
+        "tags": [
+          "usuarios"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "usuarios"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/usuario"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/usuario"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/usuario"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "usuarios"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/usuario"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/usuario"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/usuario"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/usuario"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/usuario"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/usuario"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/usuarios/{id}": {
+      "get": {
+        "tags": [
+          "usuarios"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/usuario"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/usuario"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/usuario"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "usuarios"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "acessos": {
+        "required": [
+          "id",
+          "id_empresa",
+          "id_grupo"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_grupo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_empresa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "empresa": {
+            "$ref": "#/components/schemas/empresa"
+          },
+          "id_usuario": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_rotina": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_perfil": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "agendacab": {
+        "required": [
+          "backcolor",
+          "color",
+          "id",
+          "idcategoria",
+          "idpessoa",
+          "nome",
+          "tipo"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idpessoa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idcategoria": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nome": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "color": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "backcolor": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "tipo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "edicao": {
+            "type": "boolean"
+          },
+          "mover": {
+            "type": "boolean"
+          },
+          "check": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "agendaeven": {
+        "required": [
+          "end",
+          "id",
+          "start",
+          "titulo"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idagecab": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "start": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "end": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "titulo": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "diatodo": {
+            "type": "boolean"
+          },
+          "url": {
+            "type": "string",
+            "nullable": true
+          },
+          "display": {
+            "type": "string",
+            "nullable": true
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "agendaCab": {
+            "$ref": "#/components/schemas/agendacab"
+          }
+        },
+        "additionalProperties": false
+      },
+      "empresa": {
+        "required": [
+          "id"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "razaosocial": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "id_grupo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "grupo": {
+            "$ref": "#/components/schemas/grupo"
+          }
+        },
+        "additionalProperties": false
+      },
+      "funcsal": {
+        "required": [
+          "id",
+          "id_empresa",
+          "id_grupo"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_grupo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_empresa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "empresa": {
+            "$ref": "#/components/schemas/empresa"
+          },
+          "codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "salario": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "grupo": {
+        "required": [
+          "id"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nomegrupo": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "paramcusto": {
+        "required": [
+          "id",
+          "id_empresa",
+          "id_grupo"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_grupo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_empresa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "empresa": {
+            "$ref": "#/components/schemas/empresa"
+          },
+          "diames": {
+            "type": "number",
+            "format": "double"
+          },
+          "horadia": {
+            "type": "number",
+            "format": "double"
+          },
+          "encargos": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "perfil": {
+        "required": [
+          "id",
+          "id_empresa",
+          "id_grupo"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_grupo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_empresa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "empresa": {
+            "$ref": "#/components/schemas/empresa"
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "perfil_rotina": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/perfil_rotina"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "perfil_rotina": {
+        "required": [
+          "id",
+          "id_empresa",
+          "id_grupo"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_grupo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_empresa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "empresa": {
+            "$ref": "#/components/schemas/empresa"
+          },
+          "id_perfil": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_rotina": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "acessos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/acessos"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "projetos": {
+        "required": [
+          "id",
+          "id_empresa",
+          "id_grupo"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_grupo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_empresa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "empresa": {
+            "$ref": "#/components/schemas/empresa"
+          },
+          "nro": {
+            "type": "string",
+            "nullable": true
+          },
+          "diames": {
+            "type": "number",
+            "format": "double"
+          },
+          "horadia": {
+            "type": "number",
+            "format": "double"
+          },
+          "encargos": {
+            "type": "number",
+            "format": "double"
+          },
+          "nomecliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "acrecimoquebra": {
+            "type": "number",
+            "format": "double"
+          },
+          "material": {
+            "type": "number",
+            "format": "double"
+          },
+          "fixomo": {
+            "type": "number",
+            "format": "double"
+          },
+          "diversos": {
+            "type": "number",
+            "format": "double"
+          },
+          "recebido": {
+            "type": "number",
+            "format": "double"
+          },
+          "gasto": {
+            "type": "number",
+            "format": "double"
+          },
+          "apurado": {
+            "type": "number",
+            "format": "double"
+          },
+          "comissaoarquiteto": {
+            "type": "number",
+            "format": "double"
+          },
+          "custodoprojeto": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalmaodeobra": {
+            "type": "number",
+            "format": "double"
+          },
+          "rentabilidade": {
+            "type": "number",
+            "format": "double"
+          },
+          "tiporentabilidade": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "projmoves": {
+        "required": [
+          "id",
+          "id_empresa",
+          "id_grupo"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_grupo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_empresa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "empresa": {
+            "$ref": "#/components/schemas/empresa"
+          },
+          "data": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "horainicio": {
+            "type": "string",
+            "nullable": true
+          },
+          "horafinal": {
+            "type": "string",
+            "nullable": true
+          },
+          "horainiint": {
+            "type": "string",
+            "nullable": true
+          },
+          "horafimint": {
+            "type": "string",
+            "nullable": true
+          },
+          "jornada": {
+            "type": "number",
+            "format": "double"
+          },
+          "id_projetos": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "projetos": {
+            "$ref": "#/components/schemas/projetos"
+          },
+          "id_funcsal": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "funcsal": {
+            "$ref": "#/components/schemas/funcsal"
+          }
+        },
+        "additionalProperties": false
+      },
+      "rotina": {
+        "required": [
+          "id",
+          "id_empresa",
+          "id_grupo"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_grupo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_empresa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "empresa": {
+            "$ref": "#/components/schemas/empresa"
+          },
+          "idpai": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "link": {
+            "type": "string",
+            "nullable": true
+          },
+          "icone": {
+            "type": "string",
+            "nullable": true
+          },
+          "modulo": {
+            "type": "string",
+            "nullable": true
+          },
+          "menu": {
+            "type": "boolean"
+          },
+          "ordem": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "perfil_rotina": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/perfil_rotina"
+            },
+            "nullable": true
+          },
+          "acessos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/acessos"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "sobre_acessos": {
+        "required": [
+          "id",
+          "id_empresa",
+          "id_grupo"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_grupo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_empresa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "empresa": {
+            "$ref": "#/components/schemas/empresa"
+          },
+          "id_usuario": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_usuario_copia": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "data_inicio": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "data_fim": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "usuario": {
+        "required": [
+          "email",
+          "id",
+          "id_empresa",
+          "id_grupo",
+          "nome",
+          "senha"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_grupo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_empresa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "empresa": {
+            "$ref": "#/components/schemas/empresa"
+          },
+          "nome": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "senha": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "email": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "departamento": {
+            "type": "string",
+            "nullable": true
+          },
+          "tema": {
+            "type": "string",
+            "nullable": true
+          },
+          "acessos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/acessos"
+            },
+            "nullable": true
+          },
+          "sobre_acessos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/sobre_acessos"
+            },
+            "nullable": true
+          },
+          "sobre_acessos_cp": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/sobre_acessos"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "xpto": {
+        "type": "object",
+        "properties": {
+          "html": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
