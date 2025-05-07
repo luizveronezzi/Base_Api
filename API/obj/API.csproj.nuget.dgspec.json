@@ -22,15 +22,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
               "C:\\Users\\luiz.veronezzi.FW\\Documents\\Proj\\Base_Api\\Base_Api\\Data\\Data.csproj": {
                 "projectPath": "C:\\Users\\luiz.veronezzi.FW\\Documents\\Proj\\Base_Api\\Base_Api\\Data\\Data.csproj"
@@ -51,8 +51,8 @@
         "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "DinkToPdf": {
               "target": "Package",
@@ -60,43 +60,43 @@
             },
             "Microsoft.AspNet.WebApi.Core": {
               "target": "Package",
-              "version": "[5.2.9, )"
+              "version": "[5.3.0, )"
             },
             "Microsoft.AspNet.WebPages": {
               "target": "Package",
-              "version": "[3.2.9, )"
+              "version": "[3.3.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[6.0.21, )"
+              "version": "[8.0.15, )"
             },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.7, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.7, )"
+              "version": "[8.0.15, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[6.0.16, )"
+              "version": "[9.0.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "Oracle.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.23.80, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[8.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.5.0, )"
+              "version": "[8.1.1, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
             }
           },
           "imports": [
@@ -118,7 +118,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -140,15 +140,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -165,24 +165,28 @@
         "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.7, )"
+              "version": "[8.0.15, )"
             },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "Oracle.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.7, )"
+              "version": "[8.23.80, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[8.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
             }
           },
           "imports": [
@@ -204,7 +208,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

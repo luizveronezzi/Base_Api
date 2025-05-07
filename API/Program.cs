@@ -1,21 +1,20 @@
 using API.Services;
-using DinkToPdf.Contracts;
+using Data.Interface;
+using Data.Model;
+using Data.Repository;
 using DinkToPdf;
+using DinkToPdf.Contracts;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System.IO;
-using Data.Interface;
-using Data.Repository;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
-using System.Text;
 using System;
-using System.Configuration;
-using Microsoft.Extensions.Configuration;
-using Microsoft.EntityFrameworkCore;
-using Data.Model;
+using System.IO;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,7 +26,7 @@ builder.Services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new 
 
 //Configuração MySql
 string mySqlConnectionStr = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<securityContext>(options => options.UseMySql(mySqlConnectionStr, ServerVersion.AutoDetect(mySqlConnectionStr)));
+builder.Services.AddDbContextPool<securityContext>(options => options.UseMySql(mySqlConnectionStr, ServerVersion.AutoDetect(mySqlConnectionStr)));
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IIntegracaoApi, IntegracaoApi>();

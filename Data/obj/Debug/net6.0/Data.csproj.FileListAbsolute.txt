@@ -83,3 +83,4 @@ C:\Users\luiz.veronezzi.FW\Documents\Proj\Base_Api\Base_Api\Data\obj\Debug\net6.
 C:\Users\luiz.veronezzi.FW\Documents\Proj\Base_Api\Base_Api\Data\obj\Debug\net6.0\Data.pdb
 C:\Users\luiz.veronezzi.FW\Documents\Proj\Base_Api\Base_Api\Data\obj\Debug\net6.0\Data.genruntimeconfig.cache
 C:\Users\luiz.veronezzi.FW\Documents\Proj\Base_Api\Base_Api\Data\obj\Debug\net6.0\ref\Data.dll
+C:\Users\luiz.veronezzi.FW\Documents\Proj\Base_Api\Base_Api\Data\obj\Debug\net6.0\Data.sourcelink.json
