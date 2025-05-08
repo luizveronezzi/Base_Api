@@ -2,35 +2,60 @@
 using Data.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
-using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Net.Http.Json;
 using System.Threading.Tasks;
 
 namespace API.Services
 {
     public class IntegracaoApi : IIntegracaoApi
+
     {
-        private readonly IConfiguration _configuration;
-        private readonly HttpClient _httpClient;
+        public string token { get; set; }
+        public string parametros { get; set; } = string.Empty;
 
-        public IntegracaoApi(IConfiguration configuration)
+        private readonly HttpClient _httpClient = new HttpClient();
+
+        public IntegracaoApi(IConfiguration _configuration)
         {
-            _configuration = configuration;
-
-            _httpClient = new();
-            _httpClient.BaseAddress = new System.Uri(_configuration["APIConfig:UrlBase"]);
             _httpClient.DefaultRequestHeaders.Accept.Clear();
             _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(_configuration["APIConfig:ContentTypeJson"]));
-
+            _httpClient.BaseAddress = new System.Uri(_configuration["APIConfig:UrlBase"]);
         }
 
-        public async Task<apiretorno> GetAPI(string nameApi, string token = null)
+        public void SetUrlbase(string urlNova)
         {
-            if (token != null)
+            _httpClient.BaseAddress = new System.Uri(urlNova);
+        }
+
+        public void SetParameters(Dictionary<string, dynamic> parameters)
+        {
+            string sets = "?";
+            string value;
+
+            foreach (var item in parameters)
             {
-                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                value = Convert.ToString(item.Value);
+                value = System.Uri.EscapeDataString(value);
+                sets += item.Key + "=" + value + "&";
+            }
+            this.parametros = sets.Substring(0, sets.Length - 1);
+        }
+
+        public async Task<apiretorno> GetAPI(string nameApi)
+        {
+            if (this.parametros != null)
+            {
+                nameApi = string.Concat(nameApi, this.parametros);
+            }
+
+            if (this.token != null)
+            {
+                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", this.token);
             }
 
             var response = await _httpClient.GetAsync(nameApi);
@@ -39,29 +64,16 @@ namespace API.Services
             return resposta;
         }
 
-        public async Task<apiretorno> GetAPI(string nameApi, List<string> paramapi, string token = null)
+        public async Task<apiretorno> PostAPI<T>(string nameApi, T body)
         {
-            foreach (var item in paramapi)
+            if (this.parametros != null)
             {
-                nameApi = string.Concat(nameApi, "/" + item);
+                nameApi = string.Concat(nameApi, this.parametros);
             }
 
-            if (token != null)
+            if (this.token != null)
             {
-                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-            }
-
-            var response = await _httpClient.GetAsync(nameApi);
-            var resposta = await Verifica_Acesso(response);
-
-            return resposta;
-        }
-
-        public async Task<apiretorno> PostAPI<T>(string nameApi, T body, string token = null)
-        {
-            if (token != null)
-            {
-                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", this.token); ;
             }
 
             var response = await _httpClient.PostAsJsonAsync(nameApi, body);
@@ -70,29 +82,16 @@ namespace API.Services
             return resposta;
         }
 
-        public async Task<apiretorno> PostAPI<T>(string nameApi, List<string> paramapi, T body, string token = null)
+        public async Task<apiretorno> PutAPI<T>(string nameApi, T body)
         {
-            foreach (var item in paramapi)
+            if (this.parametros != null)
             {
-                nameApi = string.Concat(nameApi, "/" + item);
+                nameApi = string.Concat(nameApi, this.parametros);
             }
 
-            if (token != null)
+            if (this.token != null)
             {
-                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-            }
-
-            var response = await _httpClient.PostAsJsonAsync(nameApi, body);
-            var resposta = await Verifica_Acesso(response);
-
-            return resposta;
-        }
-
-        public async Task<apiretorno> PutAPI<T>(string nameApi, T body, string token = null)
-        {
-            if (token != null)
-            {
-                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", this.token);
             }
 
             var response = await _httpClient.PutAsJsonAsync(nameApi, body);
@@ -101,29 +100,16 @@ namespace API.Services
             return resposta;
         }
 
-        public async Task<apiretorno> PutAPI<T>(string nameApi, List<string> paramapi, T body, string token = null)
+        public async Task<apiretorno> DeleteAPI(string nameApi)
         {
-            foreach (var item in paramapi)
+            if (this.parametros != null)
             {
-                nameApi = string.Concat(nameApi, "/" + item);
+                nameApi = string.Concat(nameApi, this.parametros);
             }
 
-            if (token != null)
+            if (this.token != null)
             {
-                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-            }
-
-            var response = await _httpClient.PutAsJsonAsync(nameApi, body);
-            var resposta = await Verifica_Acesso(response);
-
-            return resposta;
-        }
-
-        public async Task<apiretorno> DeleteAPI(string nameApi, string token = null)
-        {
-            if (token != null)
-            {
-                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", this.token);
             }
 
             var response = await _httpClient.DeleteAsync(nameApi);
@@ -132,33 +118,26 @@ namespace API.Services
             return resposta;
         }
 
-        public async Task<apiretorno> DeleteAPI(string nameApi, List<string> paramapi, string token = null)
+        public async Task<dynamic> GetData<T>(apiretorno data)
         {
-            foreach (var item in paramapi)
-            {
-                nameApi = string.Concat(nameApi, "/" + item);
-            }
-
-            if (token != null)
-            {
-                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-            }
-
-            var response = await _httpClient.DeleteAsync(nameApi);
-            var resposta = await Verifica_Acesso(response);
-
-            return resposta;
+            var retorno = await Task.Run(() => JsonConvert.DeserializeObject<T>(data.data));
+            return retorno;
         }
 
-        public async Task<apiretorno> Verifica_Acesso(HttpResponseMessage response)
+        private async Task<apiretorno> Verifica_Acesso(HttpResponseMessage response)
         {
-            apiretorno resposta = await response.Content.ReadAsAsync<apiretorno>();
-            if (response.StatusCode == HttpStatusCode.Unauthorized)
+            apiretorno resposta = new();
+
+            if (!response.IsSuccessStatusCode)
             {
-                resposta = (resposta == null ? new() : resposta);
-                resposta.statuscode = 401;
+                resposta.statuscode = (int)response.StatusCode;
                 resposta.success = false;
-                resposta.mensage = "Acesso Negado";
+                resposta.mensage = response.ReasonPhrase;
+            }
+            else
+            {
+                resposta = await response.Content.ReadFromJsonAsync<apiretorno>();
+                resposta.data = await response.Content.ReadAsStringAsync();
             }
             return resposta;
         }

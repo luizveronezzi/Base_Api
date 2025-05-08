@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\luiz.veronezzi.FW\\Documents\\Proj\\Base_Api\\Base_Api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{507BA5E0-8FC0-465B-9086-898175F33F28}|API\\API.csproj|c:\\users\\luiz.veronezzi.fw\\documents\\proj\\base_api\\base_api\\api\\services\\integracaoapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507BA5E0-8FC0-465B-9086-898175F33F28}|API\\API.csproj|solutionrelative:api\\services\\integracaoapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BA2E926-FC60-456A-A668-2594DFAC330A}|Data\\Data.csproj|c:\\users\\luiz.veronezzi.fw\\documents\\proj\\base_api\\base_api\\data\\interface\\iintegracaoapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BA2E926-FC60-456A-A668-2594DFAC330A}|Data\\Data.csproj|solutionrelative:data\\interface\\iintegracaoapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{507BA5E0-8FC0-465B-9086-898175F33F28}|API\\API.csproj|c:\\users\\luiz.veronezzi.fw\\documents\\proj\\base_api\\base_api\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{507BA5E0-8FC0-465B-9086-898175F33F28}|API\\API.csproj|solutionrelative:api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -34,15 +42,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IIntegracaoApi.cs",
+              "DocumentMoniker": "C:\\Users\\luiz.veronezzi.FW\\Documents\\Proj\\Base_Api\\Base_Api\\Data\\Interface\\IIntegracaoApi.cs",
+              "RelativeDocumentMoniker": "Data\\Interface\\IIntegracaoApi.cs",
+              "ToolTip": "C:\\Users\\luiz.veronezzi.FW\\Documents\\Proj\\Base_Api\\Base_Api\\Data\\Interface\\IIntegracaoApi.cs",
+              "RelativeToolTip": "Data\\Interface\\IIntegracaoApi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T15:18:38.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IntegracaoApi.cs",
+              "DocumentMoniker": "C:\\Users\\luiz.veronezzi.FW\\Documents\\Proj\\Base_Api\\Base_Api\\API\\Services\\IntegracaoApi.cs",
+              "RelativeDocumentMoniker": "API\\Services\\IntegracaoApi.cs",
+              "ToolTip": "C:\\Users\\luiz.veronezzi.FW\\Documents\\Proj\\Base_Api\\Base_Api\\API\\Services\\IntegracaoApi.cs",
+              "RelativeToolTip": "API\\Services\\IntegracaoApi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T15:18:02.056Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Startup.cs",
               "DocumentMoniker": "C:\\Users\\luiz.veronezzi.FW\\Documents\\Proj\\Base_Api\\Base_Api\\API\\Startup.cs",
               "RelativeDocumentMoniker": "API\\Startup.cs",
@@ -50,12 +84,11 @@
               "RelativeToolTip": "API\\Startup.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAACYAAACWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T12:28:25.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T12:28:25.884Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\luiz.veronezzi.FW\\Documents\\Proj\\Base_Api\\Base_Api\\API\\Program.cs",
               "RelativeDocumentMoniker": "API\\Program.cs",
@@ -63,12 +96,11 @@
               "RelativeToolTip": "API\\Program.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T12:09:55.436Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T12:09:55.436Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Data.csproj",
               "DocumentMoniker": "C:\\Users\\luiz.veronezzi.FW\\Documents\\Proj\\Base_Api\\Base_Api\\Data\\Data.csproj",
               "RelativeDocumentMoniker": "Data\\Data.csproj",
@@ -81,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "API.csproj",
               "DocumentMoniker": "C:\\Users\\luiz.veronezzi.FW\\Documents\\Proj\\Base_Api\\Base_Api\\API\\API.csproj",
               "RelativeDocumentMoniker": "API\\API.csproj",
@@ -94,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "acessos.cs",
               "DocumentMoniker": "C:\\Users\\luiz.veronezzi.FW\\Documents\\Proj\\Base_Api\\Base_Api\\Data\\Model\\acessos.cs",
               "RelativeDocumentMoniker": "Data\\Model\\acessos.cs",
@@ -102,12 +134,11 @@
               "RelativeToolTip": "Data\\Model\\acessos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T11:00:22.348Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T11:00:22.348Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "securityContext.cs",
               "DocumentMoniker": "C:\\Users\\luiz.veronezzi.FW\\Documents\\Proj\\Base_Api\\Base_Api\\Data\\Model\\securityContext.cs",
               "RelativeDocumentMoniker": "Data\\Model\\securityContext.cs",
@@ -115,8 +146,7 @@
               "RelativeToolTip": "Data\\Model\\securityContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T10:53:09.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T10:53:09.651Z"
             }
           ]
         }

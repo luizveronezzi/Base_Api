@@ -6,13 +6,16 @@ namespace Data.Interface
 {
     public interface IIntegracaoApi
     {
-        Task<apiretorno> GetAPI(string nameApi, string token = null);
-        Task<apiretorno> GetAPI(string nameApi, List<string> paramapi, string token = null);
-        Task<apiretorno> PostAPI<T>(string nameApi, T body, string token = null);
-        Task<apiretorno> PostAPI<T>(string nameApi, List<string> paramapi, T body, string token = null);
-        Task<apiretorno> PutAPI<T>(string nameApi, T body, string token = null);
-        Task<apiretorno> PutAPI<T>(string nameApi, List<string> paramapi, T body, string token = null);
-        Task<apiretorno> DeleteAPI(string nameApi, string token = null);
-        Task<apiretorno> DeleteAPI(string nameApi, List<string> paramapi, string token = null);
+        public string token { get; set; }
+        public string parametros { get; set; }
+
+        Task<apiretorno> GetAPI(string nameApi);
+        Task<apiretorno> PostAPI<T>(string nameApi, T body);
+        Task<apiretorno> PutAPI<T>(string nameApi, T body);
+        Task<apiretorno> DeleteAPI(string nameApi);
+        Task<dynamic> GetData<T>(apiretorno data);
+        void SetUrlbase(string urlNova);
+        void SetParameters(Dictionary<string, dynamic> parameters);
+
     }
 }
